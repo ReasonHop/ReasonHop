@@ -1,0 +1,130 @@
+{
+  "dataset": "hotpot_qa/distractor",
+  "split": "validation",
+  "limit": 1000,
+  "baselines": [
+    {
+      "name": "baseline_1_implicit_reader",
+      "samples": 1000,
+      "exact_match": 0.058,
+      "f1": 0.10588910533910535,
+      "supporting_title_recall": 1.0,
+      "supporting_fact_recall": 1.0,
+      "avg_latency_ms": 1.168247300782241,
+      "examples": [
+        {
+          "id": "5a8b57f25542995d1e6f1371",
+          "question": "Were Scott Derrickson and Ed Wood of the same nationality?",
+          "gold_answer": "yes",
+          "prediction": "Ed Wood (film)"
+        },
+        {
+          "id": "5a8c7595554299585d9e36b6",
+          "question": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+          "gold_answer": "Chief of Protocol",
+          "prediction": "Shirley Temple"
+        },
+        {
+          "id": "5a85ea095542994775f606a8",
+          "question": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+          "gold_answer": "Animorphs",
+          "prediction": "Katherine Applegate"
+        },
+        {
+          "id": "5adbf0a255429947ff17385a",
+          "question": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?",
+          "gold_answer": "no",
+          "prediction": "The Esma Sultan Mansion"
+        },
+        {
+          "id": "5a8e3ea95542995a26add48d",
+          "question": "The director of the romantic comedy \"Big Stone Gap\" is based in what New York city?",
+          "gold_answer": "Greenwich Village, New York City",
+          "prediction": "This Romantic"
+        }
+      ]
+    },
+    {
+      "name": "baseline_2_bm25_plus_reader",
+      "samples": 1000,
+      "exact_match": 0.063,
+      "f1": 0.1065306910806911,
+      "supporting_title_recall": 0.7495,
+      "supporting_fact_recall": 0.7551285714285708,
+      "avg_latency_ms": 1.6063974997377954,
+      "examples": [
+        {
+          "id": "5a8b57f25542995d1e6f1371",
+          "question": "Were Scott Derrickson and Ed Wood of the same nationality?",
+          "gold_answer": "yes",
+          "prediction": "Jon Spaihts"
+        },
+        {
+          "id": "5a8c7595554299585d9e36b6",
+          "question": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+          "gold_answer": "Chief of Protocol",
+          "prediction": "Shirley Temple"
+        },
+        {
+          "id": "5a85ea095542994775f606a8",
+          "question": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+          "gold_answer": "Animorphs",
+          "prediction": "Katherine Applegate"
+        },
+        {
+          "id": "5adbf0a255429947ff17385a",
+          "question": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?",
+          "gold_answer": "no",
+          "prediction": "The Esma Sultan Mansion"
+        },
+        {
+          "id": "5a8e3ea95542995a26add48d",
+          "question": "The director of the romantic comedy \"Big Stone Gap\" is based in what New York city?",
+          "gold_answer": "Greenwich Village, New York City",
+          "prediction": "Adriana Trigiani"
+        }
+      ]
+    },
+    {
+      "name": "baseline_3_supporting_fact_naive",
+      "samples": 1000,
+      "exact_match": 0.067,
+      "f1": 0.11441847041847045,
+      "supporting_title_recall": 0.794,
+      "supporting_fact_recall": 0.6337119047619049,
+      "avg_latency_ms": 1.1974082003871445,
+      "examples": [
+        {
+          "id": "5a8b57f25542995d1e6f1371",
+          "question": "Were Scott Derrickson and Ed Wood of the same nationality?",
+          "gold_answer": "yes",
+          "prediction": "Ed Wood Sr"
+        },
+        {
+          "id": "5a8c7595554299585d9e36b6",
+          "question": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+          "gold_answer": "Chief of Protocol",
+          "prediction": "Shirley Temple"
+        },
+        {
+          "id": "5a85ea095542994775f606a8",
+          "question": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+          "gold_answer": "Animorphs",
+          "prediction": "Katherine Applegate"
+        },
+        {
+          "id": "5adbf0a255429947ff17385a",
+          "question": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?",
+          "gold_answer": "no",
+          "prediction": "The Esma Sultan Mansion"
+        },
+        {
+          "id": "5a8e3ea95542995a26add48d",
+          "question": "The director of the romantic comedy \"Big Stone Gap\" is based in what New York city?",
+          "gold_answer": "Greenwich Village, New York City",
+          "prediction": "Altar Identity Studios"
+        }
+      ]
+    }
+  ]
+}
